@@ -2,7 +2,7 @@
 
 This library streamlines working with https://tikwm.com (the best 3rd party API for TikTok, thx for the service btw).
 
-Ensure every request is timed out properly, no 429.
+Be sure every request is timed out properly, no 429.
 ```go
 package main
 
