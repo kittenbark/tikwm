@@ -1,29 +1,29 @@
 package tikwm
 
 type UserPost struct {
-	Id          string `json:"id"`
-	VideoId     string `json:"video_id"`
-	Region      string `json:"region"`
-	Title       string `json:"title"`
-	Cover       string `json:"cover"`
-	OriginCover string `json:"origin_cover"`
-	Duration    int    `json:"duration"`
-	Play        string `json:"play"`
-	Wmplay      string `json:"wmplay"`
-	Hdplay      string `json:"hdplay"`
-	Size        int64  `json:"size"`
-	WmSize      int64  `json:"wm_size"`
-	HdSize      int64  `json:"hd_size"`
-	Music       string `json:"music"`
+	Id          string  `json:"id"`
+	VideoId     string  `json:"video_id"`
+	Region      string  `json:"region"`
+	Title       string  `json:"title"`
+	Cover       string  `json:"cover"`
+	OriginCover string  `json:"origin_cover"`
+	Duration    float64 `json:"duration"`
+	Play        string  `json:"play"`
+	Wmplay      string  `json:"wmplay"`
+	Hdplay      string  `json:"hdplay"`
+	Size        int64   `json:"size"`
+	WmSize      int64   `json:"wm_size"`
+	HdSize      int64   `json:"hd_size"`
+	Music       string  `json:"music"`
 	MusicInfo   struct {
-		Id       string `json:"id"`
-		Title    string `json:"title"`
-		Play     string `json:"play"`
-		Cover    string `json:"cover"`
-		Author   string `json:"author"`
-		Original bool   `json:"original"`
-		Duration int    `json:"duration"`
-		Album    string `json:"album"`
+		Id       string  `json:"id"`
+		Title    string  `json:"title"`
+		Play     string  `json:"play"`
+		Cover    string  `json:"cover"`
+		Author   string  `json:"author"`
+		Original bool    `json:"original"`
+		Duration float64 `json:"duration"`
+		Album    string  `json:"album"`
 	} `json:"music_info"`
 	PlayCount     int         `json:"play_count"`
 	DiggCount     int         `json:"digg_count"`
