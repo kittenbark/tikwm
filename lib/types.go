@@ -16,14 +16,15 @@ type UserPost struct {
 	HdSize      int64   `json:"hd_size"`
 	Music       string  `json:"music"`
 	MusicInfo   struct {
-		Id       string  `json:"id"`
-		Title    string  `json:"title"`
-		Play     string  `json:"play"`
-		Cover    string  `json:"cover"`
-		Author   string  `json:"author"`
-		Original bool    `json:"original"`
-		Duration float64 `json:"duration"`
-		Album    string  `json:"album"`
+		Id       string `json:"id"`
+		Title    string `json:"title"`
+		Play     string `json:"play"`
+		Cover    string `json:"cover"`
+		Author   string `json:"author"`
+		Original bool   `json:"original"`
+		// Duration for some videos is string.
+		Duration interface{} `json:"duration"`
+		Album    string      `json:"album"`
 	} `json:"music_info"`
 	PlayCount     int         `json:"play_count"`
 	DiggCount     int         `json:"digg_count"`
